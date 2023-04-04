@@ -1,0 +1,108 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+nav li{
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: black;
+    height: 50px;
+}
+.gamecontainer{
+    /* background: black; */
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.box:hover{
+    background-color: rgb(205, 205, 245);
+}
+.info{
+    font-size: 30px;
+}
+.gameinfo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0px 40px;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.imgbox img{
+    /* display: none; */
+    width: 0;
+    transition: width 2s ease-in-out;
+}
+#button{
+    color: black;
+    background-color: rgb(242 237 237);
+    cursor: pointer;
+    border: 2px solid black;
+    padding: 10px 12px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#button:hover{
+    background-color: grey;
+}
+.line{
+    height: 2px;
+    width: 30vw;
+    background-color: black;
+    /* border: bold; */
+    /* border: 2px solid yellow; */
+    position: absolute;
+    transition: width 1s ease-in-out;
+
+}
+@media  screen and (max-width :950px) {
+    .gamecontainer{
+        flex-wrap: wrap;
+    }
+    .gameinfo{
+        margin-top: 35px;
+
+    }
+    .gameinfo h1{
+        font-size: 35px;
+    }
+    .container{
+        grid-template-columns: repeat(3,25vw);
+        grid-template-rows: repeat(3,23vw);
+    }
+    
+}
